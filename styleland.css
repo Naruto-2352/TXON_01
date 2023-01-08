@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* border: 1px solid red; */
+    
+}
+
+section{
+ position: relative;
+ width: 100%;
+ min-height: 60vh;
+ padding: 80px;
+ display: flex;
+ justify-content: space-between;   
+ align-items: center;
+ background:  #fff;
+ background-image: linear-gradient(rgb(241, 233, 233), rgb(90, 176, 197));
+}
+
+header{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 5px 60px;
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;
+    background-color: rgb(4, 5, 8);
+    border-radius: 10px;
+    
+}
+header .logo{
+    position: relative;
+    max-width: 50px;
+    height: auto;
+    width: 100px;
+
+}
+header ul{
+    position: relative;
+    display: flex;
+    font-size: 20px;
+}
+header ul li{
+    list-style: none;
+    /* padding: 10px; */
+}
+li a:hover {
+    background-image: linear-gradient(rgb(241, 233, 233), rgb(24, 56, 124));
+  }
+  
+header ul li a{
+    display: inline-block;
+    color: rgb(238, 232, 232);
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+    padding: 7px;
+}
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textBox{
+    position: relative;
+    max-width: 600px;
+    /* color: white; */
+    
+}
+.content .textBox h2{
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+.content .textBox h2 span{
+    color: darkcyan;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+.content .textBox p{
+    color: #333;
+}
+.content .textBox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #673e96;
+    color: rgb(255, 245, 245);
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.content .imgBox{
+    width: 660px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 10px;
+}
+.content .imgBox img{
+    max-width: 290px;
+}
+.para{
+    color: #a11818;
+}
+
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #9e77a3;
+    clip-path: circle(600px at right 800px);
+}
+.random{
+    flex-wrap: wrap;
+    padding: 64px;
+    background-image: linear-gradient(rgb(191, 203, 204), skyblue);
+    gap: 32px;
+}
+.random h2{
+    font-size: 36px;
+    font-weight: bolder;
+    text-align: center;
+    color: #469eb4;
+    
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    gap: 32px;
+    flex-flow: row-wrap;
+}
+.card{
+    max-width: 150px;
+    color: #9e77a3;
+    transition: ease-in .7s;
+}
+.card:hover{
+    color: #333;
+}
+.content-img{
+    width: 144px;
+    height: 144pxpx;
+    border: 0px solid #469eb4;
+    background-image: linear-gradient(180deg, #844ea8, rgba(0, 0, 0, 0));;
+    border-radius: 20px;
+    transition: ease 0.1s;
+
+}
+button:hover{
+    background-color: #673e96;
+    color: #333;
+}
+.sign-up-section p{
+    margin: 0px;
+}
+.sign-up-section {
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:32px;
+    padding:36px;
+    background-color: #715091;
+    border-radius: 5px;
+    color: #f9faf8;
+    flex-flow: row wrap;
+}
+.sign-up-section button{
+    border: 10px solid #673e96;
+}
+.small{
+    font-size: 12px;
+}
+.quote-section{
+    display: flex;
+    flex-direction: column;
+    padding: 110px 110px 80px;
+   background-image: linear-gradient(rgb(230, 234, 240), rgb(86, 72, 163));
+    border-bottom: solid black 1px;
+    font-size: 24px;
+    line-height: 150%;
+    font-size: italic;
+
+}
+.quote-section p{
+    text-align: end;
+    font-style: normal;
+    font-weight: 0;
+    color: sienna;
+}
+.image{
+    text-align: end;
+    left: 30px;
+    top: 20px;
+    right: 40px;
+    padding-right: 50px;
+}
+.quote-section h3{
+    text-align: center;
+    font-style: initial;
+    font-weight: 0;
+    color: #673e96;
+    padding: 5px;
+}
+.quote-section h3 span{
+    color: #1591ca;
+}
+
+footer{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 24px 0px;
+    align-self: stretch;
+}
